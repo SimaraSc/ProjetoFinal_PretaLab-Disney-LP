@@ -13,17 +13,31 @@
 */
 function calcularMedia() {
   const nota1 = parseFloat(document.getElementById("nota1").value);
-  const note2 = parseFloat(document.getElementById("nota2").value);
-  const note3 = parseFloat(document.getElementById("nota3").value);
-  const note4 = parseFloat(document.getElementById("nota4").value);
-
-  let mensagem = "";
+  const nota2 = parseFloat(document.getElementById("nota2").value);
+  const nota3 = parseFloat(document.getElementById("nota3").value);
+  const nota4 = parseFloat(document.getElementById("nota4").value);
   // evite mexer no código acima!
 
+const nota1 = 10
+const nota2 = 8
+const nota3 = 7
+const nota4 = 8
+const media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-
-
+if(media = 0) {
+  console.log("Sua média é: " + media + ". Infelizmente você zerou a prova :( ");
+} else if(media = 0.1 && media <= 3) {
+  console.log("Caramba, deu ruim, você obteve media " + media +"! Estude mais e tente novamente!");
+} else if(media = 3.1 && media <= 5.9) {
+  console.log("Você obteve media " + media + "! Falta pouco para a média.");
+} else if(media < 7 && media >= 6) {
+  console.log("Você está na média com " + media +"!");
+} else if(media < 9.9 && media >= 7.1) {
+  console.log("Notão! Sua média é " + media +"!");
+} else if(media = 10) {
+  console.log("Parabéns, sua média é 10!");
+}
 
   // evite mexer na linha de código abaixo!
-  document.getElementById("situacaoAluno").innerHTML = mensagem;
+  document.getElementById("situacaoAluno").innerHTML = media;
 }
