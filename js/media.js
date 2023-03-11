@@ -27,13 +27,13 @@ if(media === 0) {
   alert("Caramba, deu ruim, você obteve média " + media +"! Estude mais um pouco e tente novamente!");
 } else if(media <= 5.9 && media >= 3.1) {
   alert("Você obteve média " + media + "! Falta pouco para a média ideal ser alcançada com sucesso.");
-} else if(media < 7 && media >= 6) {
+} else if(media <= 7 && media >= 6) {
   alert("Você está na média com " + media +"!");
-} else if(media < 9.9 && media >= 7.1) {
+} else if(media <= 9.9 && media >= 7.1) {
   alert("Notão! Sua média é " + media +"!");
-} else {
+} else if(media == 10)
   alert("Parabéns, sua média é 10!");
-}
+
   
 // evite mexer na linha de código abaixo!
   document.getElementById("situacaoAluno").innerHTML = media;
